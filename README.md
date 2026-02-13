@@ -50,3 +50,12 @@ Refer to `DEPLOY.md` for detailed instructions on deploying to Vercel and Render
 ## License
 
 MIT
+
+## Author
+
+**Designed & Developed by [Avinash Goyal](https://avinashg0y4l.github.io/portfolio/)**
+
+*   **Portfolio**: [Avi Portfolio](https://avinashg0y4l.github.io/portfolio/)
+*   **LinkedIn**: [Avinash Goyal](https://www.linkedin.com/in/avinash-goyal-g0y4l/)
+*   **Instagram**: [@avinashg0y4l](https://www.instagram.com/avinashg0y4l/)
+*   **Email**: [avinashg0y4l@gmail.com](mailto:avinashg0y4l@gmail.com)
