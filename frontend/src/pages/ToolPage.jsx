@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { UploadCloud, FileText, X, CheckCircle, Download, Settings, RefreshCw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { api } from '../services/api';
+import { api, API_URL } from '../services/api';
 
 const toolConfig = {
     '/compress': {
@@ -140,9 +140,10 @@ const ToolPage = () => {
             // But let's assume it does or we mock it.
             if (response.data.downloadUrl) {
                 // Prepend backend URL if relative
+                const baseUrl = API_URL.replace('/api/pdf', '');
                 const url = response.data.downloadUrl.startsWith('http')
                     ? response.data.downloadUrl
-                    : `http://localhost:5000${response.data.downloadUrl}`;
+                    : `${baseUrl}${response.data.downloadUrl}`;
                 setResultUrl(url);
             }
 
