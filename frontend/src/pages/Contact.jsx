@@ -14,6 +14,9 @@ const Contact = () => {
                         <p className="mt-4 text-lg text-slate-600">
                             We'd love to hear from you. Send us a message and we'll respond as soon as possible.
                         </p>
+                        <p className="mt-2 text-md text-primary font-medium">
+                            Or reach out directly at: <a href="mailto:avinashg0y4l@gmail.com" className="hover:underline">avinashg0y4l@gmail.com</a>
+                        </p>
                     </div>
 
                     <div className="mx-auto max-w-xl bg-white rounded-2xl shadow-sm ring-1 ring-slate-200 p-8 sm:p-12">

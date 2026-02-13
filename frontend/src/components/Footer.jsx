@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FileText, Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import { FileText, Facebook, Twitter, Instagram, Linkedin, Github, Mail, Globe } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -18,6 +18,14 @@ const Footer = () => {
                     <p className="text-sm text-slate-400 max-w-xs">
                         The all-in-one PDF solution for productive people. Merge, split, compress, and edit PDFs with ease.
                     </p>
+                    <a
+                        href="https://avinashg0y4l.github.io/portfolio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-primary hover:text-white transition-colors flex items-center gap-1 font-medium"
+                    >
+                        Designed by Avinash Goyal
+                    </a>
                 </div>
 
                 {/* Products */}
@@ -46,10 +54,18 @@ const Footer = () => {
                 <div>
                     <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">Follow Us</h3>
                     <div className="flex gap-4">
-                        <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white"><Twitter size={18} /></a>
-                        <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white"><Facebook size={18} /></a>
-                        <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white"><Linkedin size={18} /></a>
-                        <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white"><Github size={18} /></a>
+                        <a href="https://www.linkedin.com/in/avinash-goyal-g0y4l/" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white" aria-label="LinkedIn">
+                            <Linkedin size={18} />
+                        </a>
+                        <a href="https://avinashg0y4l.github.io/portfolio/" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white" aria-label="Portfolio">
+                            <Globe size={18} />
+                        </a>
+                        <a href="https://www.instagram.com/avinashg0y4l/" target="_blank" rel="noopener noreferrer" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white" aria-label="Instagram">
+                            <Instagram size={18} />
+                        </a>
+                        <a href="mailto:avinashg0y4l@gmail.com" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors text-white" aria-label="Email">
+                            <Mail size={18} />
+                        </a>
                     </div>
                 </div>
             </div>
