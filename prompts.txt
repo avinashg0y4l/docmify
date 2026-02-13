@@ -1,0 +1,231 @@
+Build a modern, responsive web application called docmify that provides complete PDF editing and conversion tools online.
+
+Core Requirements:
+
+Create a professional UI like iLovePDF or SmallPDF.
+
+Pages:
+
+Home Page
+
+PDF Tools Dashboard
+
+Individual Tool Pages
+
+Contact Page
+
+Features (PDF Only for Now):
+PDF Upload System
+
+Users can upload PDF files via drag-and-drop or file picker.
+
+Show file preview with name, size, and number of pages.
+
+PDF Tools to Include:
+
+PDF Compressor
+
+Reduce file size with Low / Medium / High compression options.
+
+PDF Merger
+
+Upload multiple PDFs and merge into one.
+
+PDF Splitter
+
+Split PDF by page range or extract selected pages.
+
+PDF to Word Converter
+
+PDF to JPG Converter
+
+JPG to PDF Converter
+
+PDF Resizer
+
+Resize pages to A4, Letter, Legal, Custom.
+
+PDF Protector
+
+Add password protection.
+
+PDF Unlocker
+
+Remove password (if permitted).
+
+PDF Rotator
+
+Rotate pages and download updated PDF.
+
+PDF Page Remover
+
+Delete selected pages.
+
+UI Design:
+
+Clean, minimal, modern design
+
+Use a grid layout for tools
+
+Each tool has an icon + short description
+
+Use smooth animations
+
+Mobile-friendly
+
+Backend Requirements:
+
+Use Node.js + Express OR Python Flask
+
+Store uploaded files temporarily
+
+Automatically delete files after 1 hour for privacy
+
+Tech Stack Suggestions:
+
+Frontend: React + Tailwind CSS
+Backend: Node.js
+PDF Processing Libraries:
+
+pdf-lib
+
+pdfjs
+
+mupdf
+
+ghostscript
+
+Output:
+
+Provide complete working code with folder structure, deployment guide, and ready-to-run project.
+
+
+🚀 PROMPT 2 — PDF Tools Homepage UI Prompt
+
+Prompt:
+
+Design a beautiful homepage for a PDF editing website.
+
+Homepage Layout:
+
+Hero section with headline:
+“All-in-One PDF Editor & Converter Online”
+
+Upload button in center
+
+Tool categories section:
+✅ Compress PDF
+✅ Merge PDF
+✅ Split PDF
+✅ Convert PDF
+✅ Protect PDF
+
+Add testimonials section
+
+Footer with privacy policy and contact
+
+Make it look like a startup SaaS product.
+
+🚀 PROMPT 3 — PDF Dashboard Prompt
+
+Prompt:
+
+Create a dashboard page that shows all PDF tools in cards.
+
+Each card should have:
+
+Tool icon
+
+Tool name
+
+Description
+
+Button: “Use Tool”
+
+Example Cards:
+
+Compress PDF
+
+Merge PDF
+
+Split PDF
+
+PDF to Word
+
+PDF to Images
+
+Add Password
+
+Add search bar to quickly find tools.
+
+🚀 PROMPT 4 — Individual Tool Page Prompt (Example: Compress PDF)
+
+Prompt:
+
+Build a PDF Compress Tool page.
+
+Flow:
+
+Upload PDF
+
+Select compression level:
+
+Low (best quality)
+
+Medium (balanced)
+
+High (smallest size)
+
+Click “Compress Now”
+
+Show progress bar
+
+Provide download button after completion
+
+Add a clean UI and user-friendly messages.
+
+🚀 PROMPT 5 — Privacy + File Deletion Prompt
+
+Prompt:
+
+Implement privacy-focused file handling:
+
+Uploaded PDFs are stored securely
+
+Files are deleted automatically after 60 minutes
+
+No user files are saved permanently
+
+Display a privacy note on every tool page
+
+🚀 PROMPT 6 — SEO + Tool Landing Pages Prompt
+
+Prompt:
+
+Generate SEO-optimized landing pages for each PDF tool with:
+
+Title
+
+Description
+
+Keywords
+
+FAQ section
+
+Call-to-action upload button
+
+Example: “Compress PDF Online Free”
+
+🚀 PROMPT 7 — Deployment Prompt
+
+Prompt:
+
+Provide full deployment instructions for this PDF tools website:
+
+Deploy frontend on Vercel
+
+Deploy backend on Render
+
+Use cloud storage temporarily
+
+Enable HTTPS and security headers
