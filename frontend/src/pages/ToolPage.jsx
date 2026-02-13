@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { UploadCloud, FileText, X, CheckCircle, Download, Settings, RefreshCw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { api, API_URL } from '../services/api';
+import SEO from '../components/SEO';
 
 const toolConfig = {
     '/compress': {
@@ -32,7 +33,78 @@ const toolConfig = {
         accept: '.pdf',
         multiple: false
     },
-    // Add others...
+    '/pdf-to-word': {
+        title: "PDF to Word",
+        description: "Convert your PDF to potentially editable Word documents.",
+        action: "Convert to Word",
+        type: 'convert',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/word-to-pdf': {
+        title: "Word to PDF",
+        description: "Make DOC and DOCX files easy to read by converting them to PDF.",
+        action: "Convert to PDF",
+        type: 'convert',
+        accept: '.doc,.docx',
+        multiple: false
+    },
+    '/pdf-to-ppt': {
+        title: "PDF to PowerPoint",
+        description: "Turn your PDF files into easy to edit PPT and PPTX slideshows.",
+        action: "Convert to PPT",
+        type: 'convert',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/excel-to-pdf': {
+        title: "Excel to PDF",
+        description: "Make EXCEL spreadsheets easy to read by converting them to PDF.",
+        action: "Convert to PDF",
+        type: 'convert',
+        accept: '.xls,.xlsx',
+        multiple: false
+    },
+    '/edit-pdf': {
+        title: "Edit PDF",
+        description: "Add text, images, shapes or freehand annotations to a PDF document.",
+        action: "Edit PDF",
+        type: 'edit',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/pdf-to-jpg': {
+        title: "PDF to JPG",
+        description: "Convert each PDF page into a JPG or extract all images contained in a PDF.",
+        action: "Convert to JPG",
+        type: 'convert',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/sign-pdf': {
+        title: "Sign PDF",
+        description: "Sign a document and request signatures. Draw your signature or sign PDF files.",
+        action: "Sign PDF",
+        type: 'sign',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/watermark': {
+        title: "Watermark PDF",
+        description: "Stamp an image or text over your PDF in seconds.",
+        action: "Add Watermark",
+        type: 'watermark',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/rotate-pdf': {
+        title: "Rotate PDF",
+        description: "Rotate your PDFs the way you need them. You can even rotate multiple PDFs at once!",
+        action: "Rotate PDF",
+        type: 'rotate',
+        accept: '.pdf',
+        multiple: true
+    },
 };
 
 const formatBytes = (bytes, decimals = 2) => {
@@ -43,6 +115,8 @@ const formatBytes = (bytes, decimals = 2) => {
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return `${parseFloat((bytes / Math.pow(k, i)).toFixed(dm))} ${sizes[i]}`;
 };
+
+
 
 const ToolPage = () => {
     const location = useLocation();
@@ -157,6 +231,7 @@ const ToolPage = () => {
 
     return (
         <div className="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-900">
+            <SEO title={config.title} description={config.description} url={`https://docmify.com${location.pathname}`} />
             <Header />
 
             <main className="flex-1 py-12">

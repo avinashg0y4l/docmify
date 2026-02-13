@@ -3,7 +3,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ToolCard from '../components/ToolCard';
 import { motion } from 'framer-motion';
+import Link from 'react-router-dom'; // Assuming Link might be needed, but strictly moving SEO
 import { FileText, Scissors, Layers, Settings, Image as ImageIcon, Briefcase, Zap, Shield, Repeat } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const tools = [
     { title: "Compress PDF", description: "Reduce file size while optimizing for maximal PDF quality.", icon: Settings, link: "/compress", color: "text-rose-600 bg-rose-100" },
@@ -26,9 +28,12 @@ const features = [
     { title: "No Installation", desc: "Works entirely in your browser. No software to download.", icon: Layers },
 ];
 
+
+
 const Home = () => {
     return (
         <div className="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-900 antialiased overflow-x-hidden">
+            <SEO />
             <Header />
 
             {/* Hero Section */}

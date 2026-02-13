@@ -2,10 +2,12 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const Contact = () => {
     return (
         <div className="flex min-h-screen flex-col bg-slate-50 font-sans text-slate-900">
+            <SEO title="Contact Us" description="Get in touch with the Docmify team for support or inquiries." url="https://docmify.com/contact" />
             <Header />
             <main className="flex-1 py-12 sm:py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">

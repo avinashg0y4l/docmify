@@ -19,8 +19,14 @@ function App() {
         <Route path="/merge" element={<ToolPage />} />
         <Route path="/split" element={<ToolPage />} />
         <Route path="/pdf-to-word" element={<ToolPage />} />
+        <Route path="/pdf-to-ppt" element={<ToolPage />} />
+        <Route path="/excel-to-pdf" element={<ToolPage />} />
+        <Route path="/edit-pdf" element={<ToolPage />} />
         <Route path="/pdf-to-jpg" element={<ToolPage />} />
         <Route path="/jpg-to-pdf" element={<ToolPage />} />
+        <Route path="/sign-pdf" element={<ToolPage />} />
+        <Route path="/watermark" element={<ToolPage />} />
+        <Route path="/rotate-pdf" element={<ToolPage />} />
         <Route path="/protect" element={<ToolPage />} />
         <Route path="/unlock" element={<ToolPage />} />
         <Route path="/resize" element={<ToolPage />} />
