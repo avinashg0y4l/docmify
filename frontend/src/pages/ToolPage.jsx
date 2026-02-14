@@ -105,6 +105,46 @@ const toolConfig = {
         accept: '.pdf',
         multiple: true
     },
+    '/protect': {
+        title: "Protect PDF",
+        description: "Encrypt your PDF with a password.",
+        action: "Protect PDF",
+        type: 'protect',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/unlock': {
+        title: "Unlock PDF",
+        description: "Remove security from your PDF.",
+        action: "Unlock PDF",
+        type: 'unlock',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/resize': {
+        title: "Resize PDF",
+        description: "Resize PDF pages or change paper size.",
+        action: "Resize PDF",
+        type: 'resize',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/delete-pages': {
+        title: "Delete Pages",
+        description: "Remove pages from your PDF document.",
+        action: "Delete Pages",
+        type: 'delete-pages',
+        accept: '.pdf',
+        multiple: false
+    },
+    '/jpg-to-pdf': {
+        title: "JPG to PDF",
+        description: "Convert JPG images to PDF in seconds.",
+        action: "Convert to PDF",
+        type: 'convert',
+        accept: '.jpg,.jpeg,.png',
+        multiple: true
+    },
 };
 
 const formatBytes = (bytes, decimals = 2) => {

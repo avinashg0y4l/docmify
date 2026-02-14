@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SEO = ({ title, description, url = 'https://docmify.com' }) => {
+const SEO = ({ title, description, url = 'https://docmify.vercel.app' }) => {
     const defaultTitle = 'Docmify - All-in-One PDF Tools';
     const defaultDescription = 'Free online PDF tools to merge, split, compress, and convert PDF files. Secure and easy to use.';
 
